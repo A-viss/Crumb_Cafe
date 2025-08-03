@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-family: "Tac One";
+    font-size: 40px;
+    color: #ffffff;
+    float: left;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .logo:hover {
+    color: deeppink;
+  }
+  
+  header ul {
+    float: right;
+    padding: 10px;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  header ul li a:hover {
+    background-color: deeppink;
+  }
+
+  header ul li a.home  {
+    background-color: deeppink;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    header {
+      height: auto;
+    }
+  
+    .logo {
+      float: none;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    header ul {
+      float: none;
+      text-align: center;
+    }
+  
+    header ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+.title {
+    font-family: "Lilita one";
+    color: deeppink;
+    font-size: 45px;
+    padding-top: 15px;
+    
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tablebox {
+  padding: 50px;
+}
+
+th, td {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  margin: 0;
+}
+
+th {
+  background-color: #333;
+  padding: 30px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+tr {
+  background-color: #f5f5f5;
+  transition: background-color 0.2s ease-in-out;
+}
+
+td {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+tr:hover {
+  background-color: rgba(255, 20, 145, 0.438);
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+  vertical-align: middle;
+}
+
+

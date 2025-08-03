@@ -1,0 +1,1 @@
+Internet connection is required to load the font styles. Because i used linked google fonts.

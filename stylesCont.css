@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-family: "Tac One";
+    font-size: 40px;
+    color: #ffffff;
+    float: left;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .logo:hover {
+    color: deeppink;
+  }
+  
+  header ul {
+    float: right;
+    padding: 10px;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  header ul li a:hover {
+    background-color: deeppink;
+  }
+  
+  header ul li a.home {
+    background-color: deeppink;
+  }
+
+  .activelink {
+    background-color: deeppink;
+  }
+
+  @media only screen and (max-width: 768px) {
+    header {
+      height: auto;
+    }
+  
+    .logo {
+      float: none;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    header ul {
+      float: none;
+      text-align: center;
+    }
+  
+    header ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .container {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .container img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+
+  }
+  .container p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 50px;
+    color: deeppink;
+  }
+
+  .containerX {
+    justify-content: space-between;
+    display: flex;
+    margin: 60px;
+  }
+
+  .container2, .container3, .container4 {
+    background-color: #333;
+    border-radius: 50px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .container2, .container3, .container4 img {
+   padding-top: 50px;
+  }
+
+ a {
+  text-decoration: none; 
+ }
+
+ a p {
+  font-family: Roboto;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  padding-top: 50px;
+ }
+
+ .y {
+  padding: 20px;
+  color: deeppink;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+ }
+
+ .y ul li {
+ display: inline-block;
+ justify-content: space-between;
+ padding: 10px;
+ }
+
+ @media only screen and (max-width: 1000px) {
+  .containerX{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+}
+ 

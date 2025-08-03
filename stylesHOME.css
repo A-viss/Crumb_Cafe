@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-family: "Tac One";
+    font-size: 40px;
+    color: #ffffff;
+    float: left;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .logo:hover {
+    color: deeppink;
+  }
+  
+  header ul {
+    float: right;
+    padding: 10px;
+  }
+  
+  header ul li {
+    display: inline-block;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  header ul li a:hover {
+    background-color: deeppink;
+  }
+
+  header ul li a.home  {
+    background-color: deeppink;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    header {
+      height: auto;
+    }
+  
+    .logo {
+      float: none;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    header ul {
+      float: none;
+      text-align: center;
+    }
+  
+    header ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+.container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  
+}
+
+.first {
+  width: 800px;
+  height: 400px;
+  align-self: center;
+}
+
+.second {
+  width: 600px;
+  height: 600px;
+  align-self: center;
+}
+.mainpic {
+  width: 600px;
+  height:600px;
+}
+
+.slogan {
+  color: deeppink;
+  font-family: "Lilita One";
+  font-weight: 250;
+  font-size: 50px;
+  
+
+}
+
+.descript {
+   color: #333;
+   font-size: 30px;
+   font-family: "Roboto";
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 25px;
+
+}
+
+.explore {
+  text-decoration: none;
+  float: right;
+  margin-right: 80px;
+}
+
+.explore p {
+  font-family: "Lilita one";
+  font-size: 35px;
+  font-weight: 400;
+  padding: 5px 10px 5px 10px;
+  border: 5px solid deeppink;
+  color: deeppink;
+  border-radius: 50px;
+}
+
+.explore p:hover,
+.explore p:focus {
+  border: 5px solid deeppink;
+  border-radius: 50px;
+  background-color: deeppink;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .first,
+  .second {
+    max-width: 100%;
+  }
+
+  .second {
+    padding-top: 100px;
+  }
+
+  .mainpic {
+    max-width: 100%;
+    max-height: 80%;
+  }
+}
+
